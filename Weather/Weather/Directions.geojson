@@ -1,0 +1,44 @@
+{
+  "coord": {
+    "lon": 30,
+    "lat": 30
+  },
+  "weather": [
+    {
+      "id": 802,
+      "main": "Clouds",
+      "description": "scattered clouds",
+      "icon": "03d"
+    }
+  ],
+  "base": "stations",
+  "main": {
+    "temp": 300.28,
+    "feels_like": 299.73,
+    "temp_min": 300.28,
+    "temp_max": 300.28,
+    "pressure": 1013,
+    "humidity": 32,
+    "sea_level": 1013,
+    "grnd_level": 995
+  },
+  "visibility": 10000,
+  "wind": {
+    "speed": 4.32,
+    "deg": 321,
+    "gust": 5.03
+  },
+  "clouds": {
+    "all": 37
+  },
+  "dt": 1716887937,
+  "sys": {
+    "country": "EG",
+    "sunrise": 1716865237,
+    "sunset": 1716915261
+  },
+  "timezone": 10800,
+  "id": 353223,
+  "name": "Madīnat as Sādāt",
+  "cod": 200
+}
