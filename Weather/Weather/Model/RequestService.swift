@@ -3,7 +3,7 @@ import UIKit
 import CoreLocation
 
 struct Service {
-    func requestWeatherForLocation(coordinates: CLLocation) async throws -> Welcome {
+    func requestWeatherForLocation(coordinates: CLLocation) async throws -> Weather {
         let long = coordinates.coordinate.longitude
         let lat = coordinates.coordinate.latitude
         
@@ -15,14 +15,13 @@ struct Service {
             throw URLError(.badServerResponse)
         }
         
-        let welcome = try JSONDecoder().decode(Welcome.self, from: data)
+        let welcome = try JSONDecoder().decode(Weather.self, from: data)
         
-        print(welcome)
         return welcome
     }
     
     func loadImage(from url: URL, completion: @escaping (UIImage?) -> Void) {
-        let task: Void = URLSession.shared.dataTask(with: url) { data, response, error in
+        let _: Void = URLSession.shared.dataTask(with: url) { data, response, error in
             guard let data = data, error == nil else {
                 print("Image load error")
                 completion(nil)
